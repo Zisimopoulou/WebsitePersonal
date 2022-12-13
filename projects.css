@@ -54,7 +54,7 @@ strong {
   width: 100%;
   top: 15%;
   position: absolute;
-  max-width: 90%;
+  max-width: 65%;
   max-height: 60%;
   padding: 8rem 6rem;
   display: flex;
@@ -93,22 +93,43 @@ strong {
 .overlay__description {
   font-family: "Cardelina";
   font-size: 1rem;
-  line-height: 300%;
+  line-height: 130%;
+  margin-bottom: 3rem;
+}
+
+.overlay__description__more_info {
+  font-family: "Cardelina";
+  font-size: 1rem;
+  line-height: 120%;
   margin-bottom: 3rem;
 }
 
 .overlay__git {
   width: 100%;
-  max-width: 30rem;
-  margin-top: -3%;
-  display: flex;
   font-size: 120%;
+  max-width: 30rem;
+  display: flex;
   transition: transform 150ms ease;
 }
 
-.linkedin-color {
-  color: #0077b5;
+.text-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
+
+/*  
+  .git {
+    font-size: 2vw;
+    position: absolute;
+    margin-top: 0.01vw;
+  } */
 
 a {
   text-decoration: none;
@@ -164,21 +185,13 @@ a {
   }
 }
 
-@media only screen and (max-width: 1227px) {
+@media only screen and (max-width: 1140px) {
   .overlay {
     padding: 8rem 4rem;
   }
 
   .overlay__title {
-    font-size: 2.7rem;
-  }
-
-  .overlay__description {
-    font-size: 1rem;
-  }
-
-  .overlay__git {
-    font-size: 80%;
+    font-size: 3rem;
   }
 }
 
@@ -226,115 +239,5 @@ a {
 
   .overlay__btn:first-child {
     margin-bottom: 1rem;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .overlay {
-    padding: 10rem 5%;
-  }
-
-  .overlay__inner {
-    max-width: 100%;
-  }
-
-  .overlay__title{
-    font-size: 1.6rem;
-  }
-
-  .overlay__description {
-    font-size: 1rem;
-  }
-
-  .overlay__git {
-    font-size: 80%;
-  }
-
-  .projectsAbout .proj {
-    font-size: 100%;
-    top: 10%;
-    right: 25%;
-  }
-
-  .projectsAbout .about {
-    font-size: 100%;
-    top: 10%;
-    right: 7%;
-  }
-
-  .overlay__git {
-    font-size: 60%;
-  }
-}
-
-
-@media only screen and (max-width: 389px) {
-  .overlay {
-    padding: 8rem 5%;
-  }
-
-  .overlay__title{
-    font-size: 1.5rem;
-  }
-
-  .overlay__description {
-    font-size: 0.9rem;
-  }
-
-  .overlay__git {
-    font-size: 80%;
-  }
-
-  .projectsAbout .proj {
-    font-size: 100%;
-    top: 10%;
-    right: 25%;
-  }
-
-  .projectsAbout .about {
-    font-size: 100%;
-    top: 10%;
-    right: 7%;
-  }
-
-  .overlay__git {
-    font-size: 60%;
-    margin-top: -10%;
-  }
-}
-
-@media only screen and (max-width: 281px) {
-  .overlay {
-    top: 15vh;
-    padding: 80% 5%;
-  }
-
-  .overlay__title{
-    font-size: 1.3rem;
-  }
-
-  .overlay__description {
-    font-size: 0.6rem;
-  }
-
-  .overlay__git {
-    font-size: 80%;
-  }
-
-  .projectsAbout .proj {
-    font-size: 80%;
-    top: 10%;
-    right: 25%;
-  }
-
-  .projectsAbout .about {
-    font-size: 80%;
-    top: 10%;
-    right: 7%;
-  }
-
-  .overlay__git {
-    font-size: 60%;
-    margin-top: -10%;
   }
 }
